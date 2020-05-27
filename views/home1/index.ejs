@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	 <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<style>
+		/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+
+	</style>
+
+</head>
+<body>
+  <nav class="blue" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">School Management</a>
+      <ul class="right hide-on-med-and-down">
+		<li><a href="/teacherprofile/<%= teacher[0].tid %>">Profile</a></li>
+		<li><a href="/dashboard">Dashboard</a></li>
+		<li><a href="/logout1">Logout</a></li>
+      </ul>
+
+    </div>
+  </nav>	
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center yellow-text text-lighten-2">Welcome to live School!</h1>
+        <div class="row center">
+          <h5 class="header col s12 ">A modern way of learning!</h5>
+        </div>
+        <div class="row center">
+          <a href="/allcourses" id="download-button" class="btn-large waves-effect waves-light blue lighten-1">All courses</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="https://firebasestorage.googleapis.com/v0/b/marioplan-6236c.appspot.com/o/unique-homeschooling-opportunity.jpg?alt=media&token=ba6d9a88-70fd-4ed9-adae-91b00209eff8" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+
+
+		<div class="col s12 center">
+			<h3 class="grey-text">What is modern education?</h3>
+		</div>
+
+
+		<div class="col s12 m6 l4">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+				  <img class="activator" src="https://firebasestorage.googleapis.com/v0/b/marioplan-6236c.appspot.com/o/people.png?alt=media&token=808ad7b5-c691-409c-a782-a2895f4b501c">
+				</div>
+				<div class="card-content center">
+				  <span class="card-title activator grey-text text-darken-4">Student</span>
+				</div>
+				<div class="card-reveal">
+				  <span class="card-title grey-text text-darken-4">Student<i class="material-icons right">close</i></span>
+				  <p>Modern day education is aided with a variety of technology, computers, projectors, internet, and many more. Diverse knowledge is being spread among the people. Everything that can be simplified has been made simpler. Science has explored every aspect of life. There is much to learn and more to assimilate. Internet provides abysmal knowledge. There is no end to it. One can learn everything he wishes to. Every topic has developed into a subject.</p>
+				</div>
+			  </div>
+		</div>
+
+		<div class="col s12 m6 l4">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+				  <img class="activator" src="https://firebasestorage.googleapis.com/v0/b/marioplan-6236c.appspot.com/o/customer.png?alt=media&token=4c187303-31ce-41fc-9719-afac17fd4ab5">
+				</div>
+				<div class="card-content center">
+				  <span class="card-title activator grey-text text-darken-4">Teacher</span>
+				</div>
+				<div class="card-reveal">
+				  <span class="card-title grey-text text-darken-4">Teacher<i class="material-icons right">close</i></span>
+				  <p>Modern day education is aided with a variety of technology, computers, projectors, internet, and many more. Diverse knowledge is being spread among the people. Everything that can be simplified has been made simpler. Science has explored every aspect of life. There is much to learn and more to assimilate. Internet provides abysmal knowledge. There is no end to it. One can learn everything he wishes to. Every topic has developed into a subject.</p>
+				</div>
+			  </div>
+		</div>
+
+		<div class="col s12 m6 l4">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+				  <img class="activator" src="https://firebasestorage.googleapis.com/v0/b/marioplan-6236c.appspot.com/o/user.png?alt=media&token=b6af17f1-5020-49dd-bcec-928067787b6f">
+				</div>
+				<div class="card-content center">
+				  <span class="card-title activator grey-text text-darken-4">Admin</span>
+				</div>
+				<div class="card-reveal">
+				  <span class="card-title grey-text text-darken-4">Admin<i class="material-icons right">close</i></span>
+				  <p>Modern day education is aided with a variety of technology, computers, projectors, internet, and many more. Diverse knowledge is being spread among the people. Everything that can be simplified has been made simpler. Science has explored every aspect of life. There is much to learn and more to assimilate. Internet provides abysmal knowledge. There is no end to it. One can learn everything he wishes to. Every topic has developed into a subject.</p>
+				</div>
+			  </div>
+		</div>
+
+      </div>
+
+    </div>
+  </div>
+
+		  
+
+	</div>
+
+
+ 
+
+  <footer class="page-footer blue">
+    <div class="footer-copyright">
+      <div class="container">
+      	ATP-3 project
+      </div>
+    </div>
+  </footer>
+
+  <script>
+	  (function($){
+		$(function(){
+
+			$('.sidenav').sidenav();
+			$('.parallax').parallax();
+
+		}); // end of document ready
+		})(jQuery);
+  </script>
+
+  </body>
+</html>

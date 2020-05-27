@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Student's Couse Page</title>
+	<style>
+		body{
+			background:url('Background.jpg');
+			background-size:fullscreen;
+			background-repeat:no-repeat;
+			margin:0;
+			padding:0;
+			font-family:Arial;
+		}
+		.profile-view{
+			margin:auto;
+			width:550px;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.9);
+			padding:5px 40px;
+			margin-top:25px;
+			background:#F1F1F9;
+		}
+		input[type=submit]{
+			border:none;
+			outline:none;
+			padding:4px;
+			color:#fff;
+			font-size:16px;
+			font-family:Arial;
+			background:#ff267e;
+			cursor:pointer;
+			border-radius:15px;
+		}
+		input[type=submit]:hover{
+			background:#efed40;
+			color:#262626;
+		}
+		a{
+			border:none;
+			outline:none;
+			padding:4px;
+			color:#fff;
+			font-size:16px;
+			font-family:Arial;
+			background:#ff267e;
+			cursor:pointer;
+			border-radius:15px;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div class="profile-view">
+		<form  method="post">
+			<div class="top-view" align="left">
+				<table>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td><img src="versity_logo.jpg"></td>
+					<td><h2 style="color: #6C19A3;" >   School managment <br/> </h2>
+					</td>
+				</tr>
+				</table>
+				<hr/>
+			</div>
+			
+			<div class="user-info" align="left">
+				<table style="width: 100%">
+					<tr>
+						<th></th>
+						<th></th>
+					</tr>
+					<tr>
+					
+						<td>
+							<div class="User-Name" style="padding: 10px;">
+								<h3>Student's Username : <input type="text" name="txtname"></h3>
+								<hr>
+							</div>
+						</td>
+						<td  align="right">
+							<div >
+								<select name="select_semester">
+									<option value="spring"> Spring </option>
+									<option value="summer"> Summer </option>
+									<option value="fall"> Fall </option>
+								</select>
+							</div>
+						</td>
+						
+					</tr>
+				</table>
+				<table style="width: 100%">
+					<tr>
+						<td> Couse Name: </td>
+						<td> <input type="text" name="coursename1"  placeholder="Course 1"> </td>
+					</tr>
+				</table>
+					
+					<br/>
+				<table style="width: 100%">
+					<tr>
+						<td> Couse Name: </td>
+						<td> <input type="text" name="coursename2" placeholder="Course 2"> </td>
+					</tr>
+				</table>
+				
+				<br/>
+				
+				<table style="width: 100%">
+					<tr>
+						<td> Couse Name: </td>
+						<td> <input type="text" name="coursename3" placeholder="Course 3"> </td>
+					</tr>
+				</table>
+				
+				<hr/>
+				<table style="width: 100%">
+					<tr>
+						<td>  </td>
+						<td align="center">
+						<a href="/home">Back</a>
+						<input type="submit" name="btnsubmit" value="Submit">
+						</td>
+						
+					</tr>
+				</table>
+			</div>
+			<br>
+			
+		
+		</form>
+	</div>
+
+</body>

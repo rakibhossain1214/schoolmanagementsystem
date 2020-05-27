@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Teacher Notice </title>
+	<style>
+		body{
+			background:url('Background.jpg');
+			background-size:fullscreen;
+			background-repeat:no-repeat;
+			margin:0;
+			padding:50;
+			font-family:Arial;
+		}
+		.main-page{
+			margin:auto;
+			width:650px;
+			box-shadow:0px 8px 16px 0px rgba(0,0,0,0.9);
+			padding:10px 40px;
+			margin-top:auto;
+			background:#F1F1F9;
+		}
+		input[type=submit]{
+			border:none;
+			outline:none;
+			padding:4px;
+			color:#fff;
+			font-size:16px;
+			font-family:Arial;
+			background:#ff267e;
+			cursor:pointer;
+			border-radius:15px;
+		}
+		input[type=submit]:hover{
+			background:#efed40;
+			color:#262626;
+		}
+		a{
+			border:none;
+			outline:none;
+			padding:4px;
+			color:#fff;
+			font-size:16px;
+			font-family:Arial;
+			background:#ff267e;
+			cursor:pointer;
+			border-radius:15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-page">
+	
+		<div class="top-view" align="left">
+			<table>
+				<tr>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<td><img src="versity_logo.jpg"></td>
+					<td><h2 style="color: #6C19A3;" >School managment <br/> </h2>
+					</td>
+				</tr>
+			</table>
+			<hr/>
+		</div>
+		<div  class="CourseInfo" align="center">
+			
+			<form method="post">
+				<fieldset style="width: 600px;" align="center">
+					<legend><h4>Send Notice</h4></legend>
+					<table style="width: 100%; padding: 15px;">
+						<tr>
+							<th></th>
+							<th></th>
+						</tr>
+						
+						<tr>
+							<td>Subject:</td>
+							<td>
+								<input type="text" name="subject" style="width: 300px"required><br><br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Notice: 
+							</td>
+							<td>
+								<textarea name="noticetext" rows="10" cols="60">  </textarea>
+							</td>
+						</tr>
+						
+					</table>	
+				</fieldset>
+				<br>
+				<br>
+				
+				<hr style="width: 530px;" align="center">
+				<a href="/home" >back  </a>
+				<input type="submit" name="submit" value="Send" align="right">
+				<br>
+				
+			</form>
+		</div>
+		<br>
+		<br>
+	</div>
+</body>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+       <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+
+  <style type="text/css">
+	
+	nav{
+		padding-left: 300px;
+	}
+	.content{
+		padding-left: 300px;
+		height:100%;
+	}
+
+	.card-bg{
+		background: rgba(0,0,0,0);
+	}
+
+	@media only screen and (max-width: 992px){
+		.content,nav{
+			padding-left: 0;
+		}
+	}
+	</style>
+
+
+  <body>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+	</script>
+
+	<!-- navbar -->
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper blue">
+				<a href="#" class="brand-logo center">Teacher Dashboard</a>
+
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="/home1"><i class="material-icons">subdirectory_arrow_left</i></a></li>
+				  </ul>
+				<a href="" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>		
+			</div>
+		</nav>
+		</div>
+		<ul class="sidenav sidenav-fixed bg" id="slide-out">
+			<li>
+				<div class="user-view">
+					<div class="background">
+						<img src="" width="100%">
+					</div>
+					<a href="#"><img src="https://firebasestorage.googleapis.com/v0/b/marioplan-6236c.appspot.com/o/smiling.png?alt=media&token=0ff008c2-91d1-4061-b792-84ae88bd096d" class="circle"></a>
+					<% for(var i=0; i < user.length; i++){ %>
+						<tr>
+							<td>Name: <%= user[i].tname %></td> <br>
+							<td>Email: <%= user[i].temail %></td>
+						</tr>
+					<%  } %>
+				</div>	
+			</li>
+			<li><a href="/dashboard" class="grey-text"><i class="material-icons">add_to_photos</i>Add Course</a></li>
+			<li><a href="/mycourses" class="grey-text"><i class="material-icons">book</i>My Courses</a></li>
+			<li><a href="/messages" class="grey-text"><i class="material-icons">mail</i>Messages</a></li>
+			<li><a href="/balance" class="grey-text"><i class="material-icons">euro</i>Balance</a></li>
+		</ul>
+
+
+		<!-- content -->
+
+		<div class="content bg">
+		<div class="container">
+		<div class="row">
+			<div class="col s12">
+				<h4 class="grey-text">My Courses</h4>
+			</div>
+			<div class="col s12 m6 l12">
+				<div class="card card-bg grey-text">
+					<div class="card-content center">                        
+                        <table border="1">
+                            <tr>
+                                <td>Messages</td>
+                            </tr>
+                        <% for(var i=0; i < messages.length; i++){ %>
+                            <tr>
+                                <td><%= messages[i].message %></td>
+                            </tr>
+                        <%  } %>
+                        </table>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	</div>
+
+	
+  </body>
+</html>
